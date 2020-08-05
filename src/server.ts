@@ -4,12 +4,12 @@ import routes from './routes'
 
 const app = express()
 
+app.use(cors())
 app.use(express.json())
 app.use(routes)
 
 app.listen(8080)
 
-//app.use(cors())
 
 //GET: Obeter uma informação
 //POST: Registrar uma nova informção
